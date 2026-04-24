@@ -60,3 +60,4 @@ REST_FRAMEWORK = {
 # CORS — allow all origins as required by the grading script
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_URLS_REGEX = r'^/api/.*$'
+WSGI_APPLICATION = 'insighta_labs.wsgi.application'
