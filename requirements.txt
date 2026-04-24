@@ -3,3 +3,4 @@ djangorestframework>=3.14
 django-cors-headers>=4.0
 gunicorn>=21.0
 psycopg2-binary>=2.9   # for PostgreSQL (remove if using SQLite only)
+dj-database-url>=2.0
