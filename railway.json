@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python manage.py migrate && python manage.py seed_profiles --file profiles.json && gunicorn insighta_labs.wsgi --bind 0.0.0.0:$PORT",
+    "startCommand": "python manage.py migrate && python manage.py seed_profiles --file seed_profiles.json && gunicorn insighta_labs.wsgi --bind 0.0.0.0:$PORT",
     "healthcheckPath": "/api/profiles",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
