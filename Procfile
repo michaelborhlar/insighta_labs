@@ -1,1 +1,1 @@
-web: gunicorn insighta_labs.wsgi --bind 0.0.0.0:$PORT --workers 2
+web: gunicorn insighta_labs.wsgi:application --bind 0.0.0.0:$PORT
