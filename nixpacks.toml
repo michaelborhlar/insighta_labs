@@ -2,7 +2,7 @@
 DJANGO_SETTINGS_MODULE = "insighta_labs.settings"
 
 [phases.build]
-cmds = ["pip install -r requirements.txt", "python manage.py collectstatic --noinput"]
+cmds = ["pip install -r requirements.txt"]
 
 [start]
 cmd = "python manage.py migrate && python manage.py seed_profiles --file profiles.json && gunicorn insighta_labs.wsgi:application --bind 0.0.0.0:$PORT"
